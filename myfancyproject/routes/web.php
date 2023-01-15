@@ -18,5 +18,7 @@ Route::get('/', function () {
     return view('index');
 
 });
-Route::get('/cicay', [MacskaController::class, 'index']);
-Route::get('/cicax', [MacskaController::class, 'show']);
+Route::get('/cica', [MacskaController::class, 'index']);
+Route::get('/cica/{id}', [MacskaController::class, 'show']);
+/* Route::put('/cica/{id}', [MacskaController::class, 'update']);
+Route::delete('/cica/{id}', [MacskaController::class, 'destroy']); */

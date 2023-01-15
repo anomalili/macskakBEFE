@@ -1,7 +1,9 @@
-import Aszinkron from "./model/aszinkron.js";
+import Aszinkron from "./aszinkron.js";
 
 class App{
-    constructor(){}
+    constructor(){
+        
+    }
 
 }
 
@@ -12,12 +14,13 @@ class AppController {
         const token = $('meta[name="csrf-token"]').attr("content"); 
         const aszinkron = new Aszinkron(token);
         console.log(token);
-        let vegpont = "cicay";
+        let vegpont = "cica";
         aszinkron.adatBe(vegpont, this.megjelenit);
     }
     megjelenit(adat) {
         console.log(adat);
     }
 }
+
 
 new AppController();

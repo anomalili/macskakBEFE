@@ -1,17 +1,19 @@
-class KonyvPublicView {
+class MacskaView {
     #elem;
     constructor(elem, szuloElem) {
         // console.log("KonyvView");
         console.log(szuloElem);
         this.#elem = elem;
-        szuloElem.append(`<tr>
-                            <td>${elem.cim}</td>
-                            <td>${elem.kep}</td>
-                            <td>${elem.szerzo}</td>
-                            <td>${elem.ar}</td>
-                            <td></td>
-                            <td><button class="kosarba">Kosárba</button></td>
-                        </tr>`)
+        szuloElem.append(`<div class = "sor">
+                            <div>${elem.nev}</div>
+                            <div>${elem.szorszin}</div>
+                            <div>${elem.szuletesiEv}</div>
+                            <div>${elem.nem}</div>
+                            <div>${elem.ivaros}</div>
+                            <div>${elem.napiAlvas}</div>
+                            <div>${elem.chip}</div>
+                            <div><button class="tetszik">Tetszik! ♥</button></div>
+                        </div>`)
         this.recordElem = szuloElem.children(`tr:last-child`);
         this.kosarElem = this.recordElem.children("td:nth-child(5)").children("button");
 
@@ -28,4 +30,4 @@ class KonyvPublicView {
     }
 }
 
-export default KonyvPublicView;
+export default MacskaView;

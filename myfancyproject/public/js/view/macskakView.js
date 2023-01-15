@@ -1,24 +1,27 @@
-import KonyvPublicView from "./KonyvPublicView.js";
+import MacskaView from "./macskaView.js";
 
-class KonyvekPublicView {
+class MacskakView {
     constructor(tomb, szuloElem) {
+        szuloElem.append(`<main></main>`);
+                            
+        this.divElem = szuloElem.children("div");
         console.log(tomb);
-        szuloElem.html(`<table>
-            <thead><tr>
-                <th>Cím</th>
-                <th>Kép</th>
-                <th>Szerző</th>
-                <th>Ár</th>
-                <th></th>
-            </tr></thead>
-            <tbody></tbody>
-            </table>`);
-        this.tablaElem = szuloElem.children("table:last-child");
-        this.tbodyElem = this.tablaElem.children("tbody");
-        tomb.forEach(konyv => {
-            const konyvOBJ = new KonyvPublicView(konyv, this.tbodyElem);
+        szuloElem.html(`
+        <div class= "macskak">
+
+            <div class="nev">Név</div>
+            <div class="szorszin">Szőrszín</div>
+            <div class="szuletesiEv">Születési év</div>
+            <div class="nem">Nem</div>
+            <div class="ivaros">Ivar</div>
+            <div class="napiAlvas">Napi alvás</div>
+            <div class="chip">Chip</div>
+        </div>`);
+     
+        tomb.forEach(cica => {
+            const macskaOBJ = new MacskaView(cica, );
         });
     }
 }
 
-export default KonyvekPublicView;
+export default MacskakView;
