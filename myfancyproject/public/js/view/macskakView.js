@@ -19,7 +19,7 @@ class MacskakView {
         </div>`);
      
         tomb.forEach(cica => {
-            const macskaOBJ = new MacskaView(cica, );
+            const macskaOBJ = new MacskaView(cica, szuloElem);
         });
     }
 }

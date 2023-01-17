@@ -1,4 +1,5 @@
 import Aszinkron from "./aszinkron.js";
+import MacskakView from "./view/macskakView.js";
 
 class App {
     constructor() {
@@ -6,11 +7,12 @@ class App {
         const aszinkron = new Aszinkron(token);
         $("#mutasdCicak").on("click", () => {
             let vegpont = "/cica";
-            aszinkron.adatBe(vegpont, this.megjelenit(token));
+            aszinkron.adatBe(vegpont, this.megjelenit);
         });
     }
     megjelenit(adat) {
-        $("#cicakHelye").append(adat);
+        $("#cicakHelye").append(adat[0].nev);
+        new MacskakView(adat, $("#cicakHelye") );
     }
 }
 new App();
