@@ -4,16 +4,16 @@ class MacskaView {
         // console.log("KonyvView");
         console.log(szuloElem);
         this.#elem = elem;
-        szuloElem.append(`<div class = "sor">
-                            <div>${elem.nev}</div>
-                            <div>${elem.szorszin}</div>
-                            <div>${elem.szuletesiEv}</div>
-                            <div>${elem.nem}</div>
-                            <div>${elem.ivaros}</div>
-                            <div>${elem.napiAlvas}</div>
-                            <div>${elem.chip}</div>
-                            <div><button class="tetszik">Tetszik! ♥</button></div>
-                        </div>`)
+        szuloElem.append(`div class= ""
+                            <div class= "nev">${elem.nev}</div>
+                            <div class= "szorszin">${elem.szorszin}</div>
+                            <div class= "szuletesiEv">${elem.szuletesiEv}</div>
+                            <div class= "nem">${elem.nem}</div>
+                            <div class= "ivaros">${elem.ivaros}</div>
+                            <div class= "napiAlvas">${elem.napiAlvas}</div>
+                            <div class= "chip">${elem.chip}</div>
+                            <div class= ""><button class="tetszik">Tetszik! ♥</button></div>
+                        `)
         this.recordElem = szuloElem.children(`tr:last-child`);
         this.kosarElem = this.recordElem.children("td:nth-child(5)").children("button");
 

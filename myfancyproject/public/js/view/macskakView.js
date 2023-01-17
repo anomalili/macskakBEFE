@@ -5,9 +5,9 @@ class MacskakView {
         szuloElem.append(`<main></main>`);
                             
         this.divElem = szuloElem.children("div");
-        console.log(tomb);
+        console.log(tomb, "macskakView");
         szuloElem.html(`
-        <div class= "macskak">
+        <div class= "macskakFejlec">
 
             <div class="nev">Név</div>
             <div class="szorszin">Szőrszín</div>

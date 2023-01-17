@@ -1,0 +1,11 @@
+#cicakHelye {display: grid;  grid-template-columns:7;}
+
+.nev {grid-area: NEV ;}
+.szorszin{grid-area: SZSZ ;}
+.szuletesiEv {grid-area: SZE ;}
+.nem{grid-area: NEM ;}
+.ivaros{grid-area: IV ;}
+.napiAlvas{grid-area: NA}
+.chip{grid-area: CH ;}
+
+.macskakFejlec {}
