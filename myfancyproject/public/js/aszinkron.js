@@ -13,12 +13,13 @@ class Aszinkron {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(data);
+                console.log(data, "aszinkron műkszik");
                 myCallBack(data);
             })
             .catch((error) => {
                 console.log("Error:", error);
             });
+
     }
 
     adatUj(vegpont, adat) {
